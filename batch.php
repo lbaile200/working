@@ -101,7 +101,7 @@ $sql = "UPDATE OrgsPointer SET Pointer='".$Org."' WHERE Ind=1";
 //nine for the races of men...
 ?>
 
-<?php
+<?php // this isn't necessary and doesn't work without AJAX
 // Total processes
 $total = 10;
 
