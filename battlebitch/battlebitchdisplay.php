@@ -42,6 +42,15 @@ $.each(currentTD, function () {
 
 <body bgcolor="#FFFFFF">
 <div align="center">
+<script>
+function mynewwindow()
+{
+var littleWindow = window.open("http://www.yahoo.com", "ltWin", 
+"toolbar=no,location=no,status=yes,menubar=yes,scrollbars=yes,width=200,height=200");
+littleWindow.focus();
+return false;
+}
+</script>
 <a href="main_form.php">back to main form</a>
 <!BEGIN MAIN TABLE-->
 
@@ -64,12 +73,8 @@ echo "<table class=TFtable border='0' width='50%'>
 <th>Status</th>
 <th>Damage Done</th>
 <th>Damage Taken</th>
-
-
+<th>UPDATE</th>
 </tr>";
-
-
-
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
@@ -80,6 +85,10 @@ echo "<td contenteditable='true'>" . $row['effects'] . "</td>";
 echo "<td contenteditable='true'>" . $row['status'] . "</td>";
 echo "<td contenteditable='true'>" . $row['damage_done'] . "</td>";
 echo "<td contenteditable='true'>" . $row['damage_taken'] . "</td>";
+$RealUser=$row['RealUser'];
+$alink="javascript:mynewwindow(update_user.php?user=".$RealUser." &sw=0,350,200')";
+echo "<td><a href='".$alink."'>".UPDATE."</td>";
+
 //echo "<td><button class='editbtn'>EDIT</button></td>";
 echo "</tr>";
 }
