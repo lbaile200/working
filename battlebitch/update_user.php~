@@ -9,9 +9,13 @@
 
 <body bgcolor="#FFFFFF">
 <?php
-$RealUser=_POST['$RealUser'];
-echo $RealUser;
+echo "<p>Update stats for</p>";
+echo "<h2>".$_GET[User]."</h2>";
+//echo $_GET[RealUser];
 ?>
-<h1>penis</h1>
+<form name="submit_form" action="update_users.php" method="post"><input type="text" name="init">initiative<br><input type="text" name="status">status<br><input type="text" name="effects">effects<br><input type="text" name="damage_done">damage done<br><input type="text" name="damage_taken">damage taken<br><input type="submit"><input type="button" value="Done"
+   onclick="window.location.href='battlebitchdisplay.php'">
+</form>
+
 </body>
 </html>
