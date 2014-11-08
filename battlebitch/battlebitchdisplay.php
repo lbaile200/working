@@ -53,7 +53,7 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
 $result = mysqli_query($con,"SELECT RealUser, user, init, effects, status, damage_done, damage_taken FROM main ORDER BY init desc");
-$drop = mysqli_query($con, "DELETE FROM main $user WHERE user LIKE $row");
+//$drop = mysqli_query($con, "DELETE FROM main $user WHERE user LIKE $row");
 while($row = mysqli_fetch_array($result))
 {
 echo "<table class=TFtable border='0' width='50%'>
@@ -78,7 +78,7 @@ echo "<td><div contenteditable='true' tabindex='5'>" . $row['status'] . "</div><
 echo "<td><div contenteditable='true' tabindex='6'>" . $row['damage_done'] . "</div></td>";
 echo "<td><div contenteditable='true' tabindex='7'>" . $row['damage_taken'] . "</div></td>";
 $RealUser=$row['RealUser'];
-$alink="javascript:newwindow(\"update_user_form.php?User=".$RealUser." &sw=0\",275,350)";
+$alink="javascript:newwindow(\"update_user_form.php?user=".$RealUser." &sw=0\",275,350)";
   echo "<td><p><a href='".$alink."'>".EDIT."</p></td>\n";
 echo "</tr>";
 }
