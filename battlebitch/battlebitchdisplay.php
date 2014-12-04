@@ -30,7 +30,7 @@
     
 
 <body bgcolor="#FFFFFF">
-<!-- testing -->
+<!--need additional functions testing -->
 </script>
 <script>
 function newwindow(myurl,xsize,ysize)
