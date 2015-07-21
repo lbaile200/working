@@ -1,0 +1,104 @@
+/* body styling*/
+body {
+  background: rgb(145, 212, 255);
+}
+/*various divs*/
+div.main{ /*main wrapper*/
+  text-align: center;
+  display: inline-block;
+  display: table;
+  table-layout: fixed;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+div.overlay{ /*main links*/
+  float: none;
+  border-radius: 20px/20px;
+  margin: auto;
+  background-color: #292727;
+  border: 2px;
+  opacity:0.9;
+  height: 90%;
+  padding: 7px;
+  display: table;
+  table-layout: fixed;
+  text-align: left;
+}
+div.notepad{ /*notepad*/
+  float: left;
+  border-radius: 20px/20px;
+  margin: auto;
+  background-color: #292727;
+  border: 2px;
+  opacity:0.9;
+  height: 90%;
+  padding: 7px;
+  margin-right: 10px;
+  display: table;
+  table-layout: fixed;
+}
+div.main_right{ /* for widgets and stuff*/
+  float: right;
+  border-radius: 20px/20px;
+  margin-left: 10px;
+  background-color: #292727;
+  border: 2px;
+  opacity:0.9;
+  height: 90%;
+  padding: 10px;
+  width: 126px;
+
+  display: table;
+  table-layout: fixed;
+}
+div.left{
+  width: auto;
+  display: inline-block;
+}
+div.clear{
+  width: auto;
+  clear: both;
+}
+div.textarea{
+  border-radius: 6px/6px;
+  background-color: white;
+  float: left;
+  display: inline-block;
+  height: 89%;
+  width: 250px;
+  appearance: textarea;
+  text-align: left;
+  }
+/*various text elements*/
+p.overlay{
+  color:white
+}
+h1.overlay{
+  color: white;
+  text-align: center
+}
+ul.overlay{
+  color: white;
+  list-style-type: none;
+  vertical-align: text-top;
+  align-self: center;
+  display: inline-block;
+}
+/*links*/
+a:link{
+  color:white;
+  text-decoration:none
+}
+a:visited{
+  color:white;
+  text-decoration:none
+}
+a:hover{
+  color:white;
+  text-decoration:none
+}
+a:active{
+  color:white;
+  text-decoration:none
+}
